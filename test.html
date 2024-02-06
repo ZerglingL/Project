@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Formatter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+    <label for="dateInput">날짜 입력:</label>
+    <div contentEditable="true">
+    <input type="submit">
+</form>
+    <script>
+        let te1xt = document.getElementById('dateInput')
+        console.log("te1xt")
+        function formatDate() {
+            const input = document.getElementById("dateInput").value;
+            const resultDiv = document.getElementById("result");
+
+            let format = "yyyy년 mm월 dd일";
+
+            if (input.length >= 2) {
+                format = input.substring(0, 2) + format.slice(2);
+            }
+            if (input.length >= 4) {
+                format = format.replace("yyyy", input.substring(0, 4));
+            }
+            if (input.length >= 6) {
+                format = format.replace("mm", input.substring(4, 6));
+            }
+            if (input.length >= 8) {
+                format = format.replace("dd", input.substring(6, 8));
+            }
+
+            const date = new Date(input.substring(0, 4), input.substring(4, 6) - 1, input.substring(6, 8));
+            const year = date.getFullYear();
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
+
+            format = format.replace("y", year.toString().charAt(3));
+            format = format.replace("m", month.toString().length === 1 ? "m" : month);
+            format = format.replace("d", day.toString().length === 1 ? "d" : day);
+
+            resultDiv.innerHTML = format;
+        }
+    </script>
+
+</body>
+
+</html>

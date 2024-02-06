@@ -1,0 +1,68 @@
+.arrow_big_bottom,
+.arrow_big_left,
+.arrow_big_right,
+.arrow_big_top,
+.arrow_small_bottom,
+.arrow_small_left,
+.arrow_small_right,
+.arrow_small_top,
+.cart,
+.info,
+.logo,
+.admin_logo,
+.search {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.arrow_big_bottom {
+    background-image: url(../css/icon/arrow_big_bottom.svg);
+}
+
+.arrow_big_left {
+    background-image: url(../css/icon/arrow_big_left.svg);
+}
+
+.arrow_big_right {
+    background-image: url(../css/icon/arrow_big_right.svg);
+}
+
+.arrow_big_top {
+    background-image: url(../css/icon/arrow_big_top.svg);
+}
+
+.arrow_small_bottom {
+    background-image: url(../css/icon/arrow_small_bottom.svg);
+}
+
+.arrow_small_left {
+    background-image: url(../css/icon/arrow_small_left.svg);
+}
+
+.arrow_small_right {
+    background-image: url(../css/icon/arrow_small_right.svg);
+}
+
+.arrow_small_top {
+    background-image: url(../css/icon/arrow_small_top.svg);
+}
+
+.cart {
+    background-image: url(../css/icon/cart.svg);
+}
+
+.info {
+    background-image: url(../css/icon/info.svg);
+}
+
+.logo {
+    background-image: url(../css/icon/logo.svg);
+}
+.admin_logo {
+    background-image: url(../css/icon/admin_logo.svg);
+}
+
+.search {
+    background-image: url(../css/icon/search.svg);
+}
